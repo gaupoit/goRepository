@@ -14,4 +14,14 @@ func main() {
 	fmt.Println(y)
 	fmt.Println(reflect.TypeOf(y))
 
+	//another way to define multiple variables
+	var (
+		a = 5
+		b = 10
+		c = 15
+	)
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+	
 }
