@@ -8,6 +8,7 @@ import (
 func main() {
 
 	checkNumberIsEvenOrOdd()
+	convertFehrenheitToCelsius()
 	
 }
 
@@ -26,5 +27,12 @@ func checkNumberIsEvenOrOdd() {
 }
 
 func convertFehrenheitToCelsius() {
-	
+
+	fmt.Print("Enter degree of Fehrenheit: ")
+	var fehrenheit float64
+	fmt.Scanf("%f", &fehrenheit)
+
+	celcius := ((fehrenheit - 32)*5)/9
+	fmt.Printf("%f degree of F equals %f degree of C\n", fehrenheit, celcius)
+
 }
