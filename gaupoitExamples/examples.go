@@ -7,9 +7,26 @@ import (
 
 func main() {
 
-	checkNumberIsEvenOrOdd()
-	convertFehrenheitToCelsius()
+	createMenu()
 	
+}
+
+func createMenu() {
+
+	var choice int
+
+	fmt.Printf("Hello, welcome you to GoLang world!!!\n")
+	fmt.Printf("We have a lot of functions:\n")
+	fmt.Printf("1. Check if number if event or odd\n")
+	fmt.Printf("2. Convert degree of F to degree of C\n")
+	fmt.Printf("What is your choice: ")
+	fmt.Scanf("%d", &choice)
+
+	if (choice == 1) {
+		checkNumberIsEvenOrOdd()
+	} else if (choice == 2) {
+		convertFehrenheitToCelsius()
+	}
 }
 
 func checkNumberIsEvenOrOdd() {
