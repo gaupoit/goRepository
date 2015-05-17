@@ -7,7 +7,12 @@ import (
 
 func main() {
 
-	//Check if number is odd or even
+	checkNumberIsEvenOrOdd()
+	
+}
+
+func checkNumberIsEvenOrOdd() {
+
 	fmt.Print("Enter a number: ")
 	var number int
 	fmt.Scanf("%d", &number)
@@ -17,5 +22,5 @@ func main() {
 	} else {
 		fmt.Printf("%d is odd number\n", number)
 	}
-	
+
 }
