@@ -24,3 +24,7 @@ func checkNumberIsEvenOrOdd() {
 	}
 
 }
+
+func convertFehrenheitToCelsius() {
+	
+}
