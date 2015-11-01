@@ -13,16 +13,19 @@ func (u *User) Greetings() string{
 }
 
 type Player struct {
-	User //composition here
+	*User //composition here, change to pointer 
 	Point int
 }
 
+func newPlayer(id int, name string, location string, point int) *Player {
+	return &Player{
+		&User{1, name, location},
+		point,
+	}
+}
+
 func main() {
-	me := Player{}
-	me.Id = 1
-	me.Name = "Thinh"
-	me.Location = "VN"
-	me.Point = 0
-	fmt.Printf("%+v", me)
+	me := newPlayer(1, "Thinh", "VN", 10)
+	fmt.Printf("%+v\n", me)
 	fmt.Println(me.Greetings())
 }
