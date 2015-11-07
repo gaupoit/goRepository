@@ -24,4 +24,8 @@ func main() {
 	city = append(city, "New York", "Blue Mountain")
 	myCities := append(vietnam, australia...)
 	fmt.Printf("%q has lengh is %d\n", myCities, len(myCities))	
+
+	//nil slice 
+	var z []int
+	fmt.Println(z == nil, len(z), cap(z))
 }
